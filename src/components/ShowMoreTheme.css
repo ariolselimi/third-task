@@ -1,5 +1,3 @@
-
-
 *{
   margin: 0;
   padding: 0;
@@ -25,47 +23,23 @@ main{
   margin-top: 2px;
   color: blue;
 }
+.colors{
+  display: flex;
+  align-items: center;
+}
+.color-paragraph{
+  margin-right: 10px;
+}
 .item-theme{
   display: flex;
-  
+  justify-content: space-between;
 }
-p{
-  margin-top: 2px;
-  margin-left: 23rem;
-}
-img{
-  width: 25px;
-  height: 15px;
-  margin-top: 3px;
-  padding-left: 5px;
-
+.custom-input{
+  width: 45px;
+  height: 26px;
+  border: none;
 }
 
-.item-theme2{
-  display: flex;
-}
-.item-theme2 p{
-  margin-left: 18.5rem;
-}
-
-.item-theme3{
-  display: flex;
-}
-.item-theme3 p{
-  margin-left: 21.2rem;
-}
-.item-theme4{
-  display: flex;
-}
-.item-theme4 p{
-  margin-left: 17.2rem;
-}
-.item-theme5{
-  display: flex;
-}
-.item-theme5 p{
-  margin-left: 14.2rem;
-}
 .buttons{
   margin-left: 27rem;
 }
@@ -91,25 +65,10 @@ img{
     margin: 0;
     margin-left: 8rem;
   }
-  .item-theme p{
-    margin:0;
-    margin-left:9rem;
-  }
-  .item-theme2 p{
-    margin: 0;
-    margin-left: 4.3rem;
-  }
-  .item-theme3 p{
-    margin: 0;
-    margin-left: 7.3rem;
-  }
-  .item-theme4 p{
-    margin: 0;
-    margin-left: 3.2rem;
-  }
-  .item-theme5 p{
-    margin: 0;
-    margin-left: 0.2rem;
+  .custom-input{
+    width: 45px;
+    height: 26px;
+    border: none;
   }
 
   .buttons{

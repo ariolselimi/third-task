@@ -3,6 +3,13 @@ import "./ShowMoreTheme.css"
 import Popup from "./Popup";
 
 function ShowMoreTheme() {
+
+    const [colorOne, setColorOne] = useState('#444444');
+    const [colorTwo, setColorTwo] = useState('#FFFFFF');
+    const [colorThree, setColorThree] = useState('#2027EF');
+    const [colorFour, setColorFour] = useState('#2027EF');
+    const [colorFive, setColorFive] = useState('#0053D1');
+
     const [buttonPopup, setButtonPopup] = useState(false)
   return (
     <div className="App">
@@ -17,39 +24,80 @@ function ShowMoreTheme() {
             <p>Change Theme</p>
           </div>
           <br/> <br/>
+
           <div className="item-theme">
                 <h3>FontColor</h3>
-                <p>#444444</p>
-                <img src="https://imgs.search.brave.com/gDUn6dUt5HEuUpqTzr9CiGOUdR7HFr3YEVdN2cDh5VQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9i/bGFjay1zbW9vdGgt/dGV4dHVyZWQtcGFw/ZXItYmFja2dyb3Vu/ZF81Mzg3Ni05ODMz/My5qcGc_c2l6ZT02/MjYmZXh0PWpwZw" alt="blackbg"/>
+                <div className="colors">
+                <p className="color-paragraph">{colorOne}</p>
+                <input 
+                className="custom-input" 
+                type="color"
+                value={colorOne}
+                onChange={(e) => setColorOne(e.target.value)} 
+                />
+                </div>
           </div>
+          <hr/>
           <br/><br/>
-          <div className="item-theme2">
+          <div className="item-theme">
                 <h3>Background Color</h3>
-                <p>#FFFFF</p>
-                <img src="https://imgs.search.brave.com/ayvM7LdoPz9F2waDAaCvXvT3OWIWoF7a4wQvcZ6ubvE/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODgzNDU5MjE1MjMt/YzJkY2RiN2YxZGNk/P2l4bGliPXJiLTQu/MC4zJml4aWQ9TTN3/eE1qQTNmREI4TUh4/elpXRnlZMmg4TW54/OGQyaHBkR1VsTWpB/bE1qQmlZV05yWjNK/dmRXNWtmR1Z1ZkRC/OGZEQjhmSHd3Jnc9/MTAwMCZxPTgw" alt="whitebg"/>
+                <div className="colors">
+                <p className="color-paragraph">{colorTwo}</p>
+                <input 
+                className="custom-input" 
+                type="color"
+                value={colorTwo}
+                onChange={(e) => setColorTwo(e.target.value)} 
+                />
+                </div>
           </div>
+          <hr/>
           <br/><br/>
-          <div className="item-theme3">
-                <h3>Button Color</h3>
-                <p>#2072EF</p>
-                <img src="https://imgs.search.brave.com/8mYfDUAzUgRLePK2GfgCjT7R8S63zyundnX1WTXsJCc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAxLzA3LzcxLzU1/LzM2MF9GXzEwNzcx/NTUyOV9LNFpIMmtj/NFRrb0FaZEE3VzZm/TTZUOFZDeVI4QVVn/TC5qcGc  " alt="bluebgx"/>
+          <div className="item-theme">
+          <h3>Button Color</h3>
+          <div className="colors">
+                <p className="color-paragraph">{colorThree}</p>
+                <input 
+                className="custom-input" 
+                type="color"
+                value={colorThree}
+                onChange={(e) => setColorThree(e.target.value)} 
+                />
+                </div>
           </div>
+          <hr/>
           <br/><br/>
-          <div className="item-theme4">
-                <h3>Button Border Color</h3>
-                <p>#2072EF</p>
-                <img src="https://imgs.search.brave.com/8mYfDUAzUgRLePK2GfgCjT7R8S63zyundnX1WTXsJCc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAxLzA3LzcxLzU1/LzM2MF9GXzEwNzcx/NTUyOV9LNFpIMmtj/NFRrb0FaZEE3VzZm/TTZUOFZDeVI4QVVn/TC5qcGc  " alt="bluebgx"/>
+          <div className="item-theme">
+          <h3>Button Border Color</h3>
+          <div className="colors">
+                <p className="color-paragraph">{colorFour}</p>
+                <input 
+                className="custom-input" 
+                type="color"
+                value={colorFour}
+                onChange={(e) => setColorFour(e.target.value)} 
+                />
+                </div>
           </div>
+          <hr/>
           <br/><br/>
-          <div className="item-theme5">
-                <h3>Buttons  Mouseover Color</h3>
-                <p>#0053D1</p>
-                <img src="https://imgs.search.brave.com/8mYfDUAzUgRLePK2GfgCjT7R8S63zyundnX1WTXsJCc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAxLzA3LzcxLzU1/LzM2MF9GXzEwNzcx/NTUyOV9LNFpIMmtj/NFRrb0FaZEE3VzZm/TTZUOFZDeVI4QVVn/TC5qcGc  " alt="bluebgx"/>
+          <div className="item-theme">
+          <h3>Buttons Mouse Color</h3>
+          <div className="colors">
+                <p className="color-paragraph">{colorFive}</p>
+                <input 
+                className="custom-input" 
+                type="color"
+                value={colorFive}
+                onChange={(e) => setColorFive(e.target.value)} 
+                />
+                </div>
           </div>
+          <hr/>
           <br/><br/>
           <div className="buttons">
             <button className="button1" onClick={() => setButtonPopup(false)}>Cancel</button>
-            <button className="button2">Save</button>
+            <button className="button2"onClick={() => setButtonPopup(false)}>Save</button>
           </div>
       </Popup>
     </div>
